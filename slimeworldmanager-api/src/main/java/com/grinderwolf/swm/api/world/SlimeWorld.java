@@ -6,6 +6,7 @@ import com.grinderwolf.swm.api.loaders.SlimeLoader;
 import com.grinderwolf.swm.api.world.properties.SlimePropertyMap;
 import lombok.Builder;
 import lombok.Getter;
+import lombok.With;
 import lombok.experimental.Accessors;
 import lombok.experimental.Wither;
 
@@ -158,7 +159,7 @@ public interface SlimeWorld {
         @Builder.Default
         private boolean allowAnimals = true;
 
-        @Wither
+        @With
         private boolean readOnly;
 
         @Builder.Default
@@ -166,5 +167,8 @@ public interface SlimeWorld {
 
         @Builder.Default
         private String environment = "NORMAL";
+
+        @Builder.Default
+        private boolean loadOnStartup = true;
     }
 }

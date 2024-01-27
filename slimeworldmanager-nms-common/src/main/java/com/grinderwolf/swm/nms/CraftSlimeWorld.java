@@ -109,7 +109,9 @@ public class CraftSlimeWorld implements SlimeWorld {
                 .allowMonsters(propertyMap.getBoolean(com.grinderwolf.swm.api.world.properties.SlimeProperties.ALLOW_MONSTERS))
                 .allowAnimals(propertyMap.getBoolean(com.grinderwolf.swm.api.world.properties.SlimeProperties.ALLOW_ANIMALS))
                 .difficulty(Difficulty.valueOf(propertyMap.getString(com.grinderwolf.swm.api.world.properties.SlimeProperties.DIFFICULTY).toUpperCase()).getValue())
-                .readOnly(readOnly).build();
+                .readOnly(readOnly)
+            .loadOnStartup(propertyMap.getBoolean(com.grinderwolf.swm.api.world.properties.SlimeProperties.LOAD_ON_STARTUP))
+            .build();
     }
 
     // World Serialization methods

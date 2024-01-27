@@ -19,6 +19,7 @@ public class SlimeProperties {
 
     public static final SlimeProperty ALLOW_MONSTERS = new SlimeProperty("allowMonsters", PropertyType.BOOLEAN, true);
     public static final SlimeProperty ALLOW_ANIMALS = new SlimeProperty("allowAnimals", PropertyType.BOOLEAN, true);
+    public static final SlimeProperty LOAD_ON_STARTUP = new SlimeProperty("loadOnStartup", PropertyType.BOOLEAN, true);
 
     public static final SlimeProperty PVP = new SlimeProperty("pvp", PropertyType.BOOLEAN, true);
 

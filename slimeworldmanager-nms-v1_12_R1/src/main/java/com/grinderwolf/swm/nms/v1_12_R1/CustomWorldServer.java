@@ -15,6 +15,7 @@ import org.bukkit.World;
 import java.io.IOException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import org.spigotmc.SpigotWorldConfig;
 
 public class CustomWorldServer extends WorldServer {
 
@@ -51,10 +52,10 @@ public class CustomWorldServer extends WorldServer {
         CustomChunkLoader chunkLoader = ((CustomDataManager) this.getDataManager()).getChunkLoader();
         chunkLoader.loadAllChunks(this);
 
-        // Disable auto save period as it's constantly saving the world
-        if (v1_12_R1SlimeNMS.IS_PAPER) {
-            this.paperConfig.autoSavePeriod = 0;
-        }
+        //// Disable auto save period as it's constantly saving the world
+        //if (v1_12_R1SlimeNMS.IS_PAPER) {
+        //    this.savingDisabled = true;
+        //}
     }
 
     CustomWorldServer(CraftSlimeWorld world, IDataManager dataManager, AdvancementDataWorld advancementData) {

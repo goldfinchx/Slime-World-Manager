@@ -88,6 +88,7 @@ public class WorldData {
         propertyMap.setBoolean(SlimeProperties.PVP, pvp);
         propertyMap.setString(SlimeProperties.ENVIRONMENT, environment);
         propertyMap.setString(SlimeProperties.WORLD_TYPE, worldType);
+        propertyMap.setBoolean(SlimeProperties.LOAD_ON_STARTUP, loadOnStartup);
 
         return propertyMap;
     }
